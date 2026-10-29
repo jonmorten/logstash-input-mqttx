@@ -121,9 +121,6 @@ class LogStash::Inputs::Mqtt < LogStash::Inputs::Base
     @closing = true
   end
 
-
-  private
-
   def stop?
     @closing || super
   end
